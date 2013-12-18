@@ -1,6 +1,6 @@
 <?php
 $urltoRichmond = "http://countdown.tfl.gov.uk/stopBoard/51750";
-$urltoKingston  = "http://countdown.tfl.gov.uk/stopBoard/*****"
+$urltoKingston  = "http://countdown.tfl.gov.uk/stopBoard/56822"
 
 $url ="http://countdown.tfl.gov.uk/stopBoard/51750";
 $result= file_get_contents($url);

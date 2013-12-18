@@ -2,13 +2,14 @@
 $urltoRichmond = "http://countdown.tfl.gov.uk/stopBoard/51750";
 $urltoKingston  = "http://countdown.tfl.gov.uk/stopBoard/56822"
 
-$url ="http://countdown.tfl.gov.uk/stopBoard/51750";
-$result= file_get_contents($url);
-$parts = explode(",",$result);
+foreach (array($urltoRichmond,$urltoKingston) as $url) {
 
-// echo $result;
-//print_r ($parts);
+  $result= file_get_contents($url);
+  $info =  (json_decode($result,true));
 
-print ("the next bus is to richmond ");
-echo $parts[5];
+  foreach ($info['arrivals'] as $bus ) {
+		print ("Next " . $bus['routeName'] . " bus to " . $bus['destination'] . "  " . $bus['estimatedWait'] . ".\n"  );
+  }
+}
+
 ?>

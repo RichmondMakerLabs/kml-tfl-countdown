@@ -1,6 +1,8 @@
 <html>
 <head>
 <title> KML countdown</title>
+<meta http-equiv="refresh" content="32">
+
 </head>
 <body>
 <?php
@@ -11,10 +13,10 @@ foreach (array($urltoRichmond,$urltoKingston) as $url) {
 
   $result= file_get_contents($url);
   $info =  (json_decode($result,true));
-
+	print("<br/>Last updated: " . $info['lastUpdated'] . ".\n<br/>" );
   foreach ($info['arrivals'] as $bus ) {
 		print ("Next " . $bus['routeName'] . " bus to " . 
-		$bus['destination'] . "  " . $bus['estimatedWait'] . ".\n"  );
+		$bus['destination'] . "  " . $bus['estimatedWait'] . ".\n<br/>"  );
   }
 }
 

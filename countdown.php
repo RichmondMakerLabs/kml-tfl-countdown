@@ -26,7 +26,7 @@ foreach (array($urltoRichmond,$urltoKingston) as $url) {
 	print("<br/>Last updated: " . $info['lastUpdated'] . ".\n<br/>" );
   foreach ($info['arrivals'] as $bus ) {
 		print ("" . $bus['routeName'] . " to " . 
-		$bus['destination'] . "  " . $bus['estimatedWait'] . ".\n<br/>"  );
+		$bus['destination'] . "  " . $bus['estimatedWait'] . "\n<br/>"  );
   }
 }
 

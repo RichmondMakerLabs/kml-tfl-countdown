@@ -23,10 +23,11 @@ foreach (array($urltoRichmond,$urltoKingston) as $url) {
 
   $result= file_get_contents($url);
   $info =  (json_decode($result,true));
-	print("<br/>Last updated: " . $info['lastUpdated'] . ".\n<br/>" );
+	print("<br/>Ashburnham Road Last updated: " . $info['lastUpdated'] . ".\n<br/>" );
+  $line = 0;
   foreach ($info['arrivals'] as $bus ) {
-		print ("" . $bus['routeName'] . " to " . 
-		$bus['destination'] . "  " . $bus['estimatedWait'] . "\n<br/>"  );
+  		++$line;
+  		printf("%2d %3s  %-15s%2d\n<br/>",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
   }
 }
 

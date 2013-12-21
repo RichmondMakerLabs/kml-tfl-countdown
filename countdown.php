@@ -18,19 +18,19 @@
 <?php
 $urltoRichmond = "http://countdown.tfl.gov.uk/stopBoard/51750";
 $urltoKingston  = "http://countdown.tfl.gov.uk/stopBoard/56822";
-
+echo("<pre>");
 foreach (array($urltoRichmond,$urltoKingston) as $url) {
 
   $result= file_get_contents($url);
   $info =  (json_decode($result,true));
-	print("<br/>Ashburnham Road Last updated: " . $info['lastUpdated'] . ".\n<br/>" );
+	print("\nLast updated " . $info['lastUpdated'] . "\nFrom Ashburnham Road\n" );
   $line = 0;
   foreach ($info['arrivals'] as $bus ) {
   		++$line;
-  		printf("%2d %3s  %-15s%2d\n<br/>",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
+  		printf("%2d %-4s  %-15s%2d min\n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
   }
 }
-
+echo("</pre>");
 ?>
 </body>
 </html>

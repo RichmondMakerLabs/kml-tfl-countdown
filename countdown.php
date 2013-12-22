@@ -27,7 +27,7 @@ foreach (array($urltoRichmond,$urltoKingston) as $url) {
   $line = 0;
   foreach ($info['arrivals'] as $bus ) {
   		++$line;
-  		printf("%-2d %-4s %-15s %2d min\n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
+                printf("%-2d %-4s %-15s %2d min\n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
   }
 }
 echo("</pre>");

@@ -18,9 +18,12 @@
 <!-- insert comment here -->
 <!-- there is some php code here that can be found in
  https://github.com/KingstonMakerLabs/kml-tfl-countdown
-please make pull requests. This software is released under AGPL 3 or later
+please contribuite! This software is released under AGPL 3 or later
 see https://www.gnu.org/licenses/agpl-3.0.html for more details.
 -->
+<header>
+Buses near our makerspace
+</header>
 <?php
 $urltoRichmond = "http://countdown.tfl.gov.uk/stopBoard/51750";
 $urltoKingston  = "http://countdown.tfl.gov.uk/stopBoard/56822";

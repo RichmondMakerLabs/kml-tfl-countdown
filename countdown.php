@@ -9,7 +9,7 @@
      background-color:#000;
      color:#00CD00;
      font-family: Tahoma, Geneva, sans-serif;
-     font-size:1.6em;
+     font-size:2em;
    }
   </style>
 

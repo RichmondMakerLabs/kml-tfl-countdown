@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>KML countdown</title>
+<title>Buses from Kingston MakerLabs</title>
 <meta http-equiv="refresh" content="16">
 <meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />

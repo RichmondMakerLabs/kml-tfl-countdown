@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>KML countdown</title>
 <meta http-equiv="refresh" content="32">

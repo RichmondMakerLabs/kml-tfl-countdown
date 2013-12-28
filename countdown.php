@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Buses from Kingston Makerlabs</title>
-    <link rel="icon" type="image/png" href="Bus_stop_ico.png" />
-    <link rel="apple-touch-icon" href="Bus_stop.png" />
-    <meta http-equiv="refresh" content="16">
-    <meta name="viewport" content="width=device-width">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <style type="text/css" media="screen">
-       body {
-         background-color:#000;
-         color:#FFA500;
-         font-family: Tahoma, Geneva, sans-serif;
-         font-size:1.2em;
-       }
-      </style>
+<title>Buses from Kingston MakerLabs</title>
+<meta http-equiv="refresh" content="16">
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<style type="text/css" media="screen">
+   body {
+     background-color:#000;
+     color:#FFA500;
+     font-family: Tahoma, Geneva, sans-serif;
+     font-size:1.2em;
+   }
+  </style>
+
 </head>
-
-
 <body>
 <!-- insert comment here -->
 <!-- there is some php code here that can be found in

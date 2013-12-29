@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< .merge_file_V1VIRG
     <meta charset="utf-8" />
     <title>Buses from Kingston Makerlabs</title>
-    <link rel="icon" type="image/png" href="http://www.kml.dreamhosters.com/bus/Bus_stop_ico.png">
+    <link rel="icon" type="image/png" href="/Bus_stop_ico.png">
     <link rel="apple-touch-icon" href="/Bus_stop.png"/>
     <meta http-equiv="refresh" content="16">
     <meta name="viewport" content="width=device-width">
@@ -17,7 +16,6 @@
          font-size:1.2em;
        }
       </style>
-=======
 <title>Buses from Kingston MakerLabs</title>
 <meta http-equiv="refresh" content="16">
 <meta name="viewport" content="width=device-width">
@@ -30,8 +28,6 @@
      font-size:1.2em;
    }
   </style>
-
->>>>>>> .merge_file_H9zQdD
 </head>
 <body>
 <!-- insert comment here -->

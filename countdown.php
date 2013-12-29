@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Buses from Kingston Makerlabs</title>
-    <link rel="icon" type="image/png" href="/Bus_stop_ico.png">
-    <link rel="apple-touch-icon" href="/Bus_stop.png"/>
+    <link rel="icon" type="image/png" href="http://www.kml.dreamhosters.com/bus/Bus_stop_ico.png">
+    <link rel="apple-touch-icon" href="http://www.kml.dreamhosters.com/bus/Bus_stop.png"/>
     <meta http-equiv="refresh" content="16">
     <meta name="viewport" content="width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes" />

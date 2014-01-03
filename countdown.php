@@ -26,21 +26,21 @@ see https://www.gnu.org/licenses/agpl-3.0.html for more details.
 <h4>Buses from Kingston MakerLabs</h4>
 </header>
 <?php
-$heading = "Ashburnham Road to Richmond";
+$name = "Ashburnham Road to Richmond";
 $stopnumber = 51750;
-display ($heading,$stopnumber);
+display ($name,$stopnumber);
 
-$heading = "Ashburnham Road to Kingston";
+$name = "Ashburnham Road to Kingston";
 $stopnumber = 56822;
-display ($heading,$stopnumber);
+display ($name,$stopnumber);
 
-$heading = "Mariner Gardens to Richmond";
+$name = "Mariner Gardens to Richmond";
 $stopnumber = 57780;
-display ($heading,$stopnumber);
+display ($name,$stopnumber);
 
-$heading = "Mariner Gardens to Kingston";
+$name = "Mariner Gardens to Kingston";
 $stopnumber = 57522;
-display ($heading,$stopnumber);
+display ($name,$stopnumber);
 
 
 function display ($head,$num)

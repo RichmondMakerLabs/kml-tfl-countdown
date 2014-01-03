@@ -50,19 +50,15 @@ function display ($head,$num)
    $info =  (json_decode($result,true));
    $line = 0;
    
-	echo("
-		<section>
-		<h5>$head<h5>
-		<pre>
-	");
+   echo("<section>
+	<h5>$head<h5>
+	<pre>");
    foreach ($info['arrivals'] as $bus ) {
   		++$line;
   		printf("%-2d %-4s %-16s%2d min\n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
    }
-   echo("
-   	</pre>
-   	</section>
-   ");
+   echo("</pre>
+   	</section>");
 }
 ?>
 </body>

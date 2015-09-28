@@ -22,10 +22,23 @@
 please contribuite! This software is released under AGPL 3 or later
 see https://www.gnu.org/licenses/agpl-3.0.html for more details.
 -->
+
+<form method="post" action="index.php">
+<input type="text" name="user_input"/>
+<input type="submit"/>
+</form>
+
 <header>
 <h4>Buses from Kingston MakerLabs</h4>
 </header>
 <?php
+if (isset($_POST["user_input"])){
+	$input=$_POST["user_input"];
+	$name = "Your stop";
+	$stopnumber = $input;
+	display ($name,$stopnumber);
+}
+
 $name = "Ashburnham Road to Richmond";
 $stopnumber = 51750;
 display ($name,$stopnumber);
@@ -41,6 +54,8 @@ display ($name,$stopnumber);
 $name = "Mariner Gardens to Kingston";
 $stopnumber = 57522;
 display ($name,$stopnumber);
+
+
 
 
 function display ($head,$num)

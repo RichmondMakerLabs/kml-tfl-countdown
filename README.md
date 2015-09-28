@@ -2,6 +2,8 @@ KML-TFL-Countdown
 =================
 
 Building a simple page to display London Bus Countdown for local stops near our meeting room.
+also a little form to get the countdown on any bus stop.
+![bus number](busnumber.jpeg)
 
 Ideal Display Features (example)(ReturnList=):-
 * Current Time	

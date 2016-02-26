@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
- <title>Buses from Kingston MakerLabs</title>
+ <title>Buses from Ham Library</title>
 <meta http-equiv="refresh" content="16">
 <meta name="viewport" content="width=device-width">
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,10 +11,11 @@
      background-color:#000;
      color:#FFA500;
      font-family: Tahoma, Geneva, sans-serif;
-     font-size:1.2em;
+     font-size:5em;
    }
   </style>
 </head>
+<img src="huglogo.png" style="float:right" >
 <body>
 <!-- insert comment here -->
 <!-- there is some php code here that can be found in
@@ -22,23 +23,10 @@
 please contribuite! This software is released under AGPL 3 or later
 see https://www.gnu.org/licenses/agpl-3.0.html for more details.
 -->
-
-<form method="post" action="index.php">
-<input type="text" name="user_input"/>
-<input type="submit"/>
-</form>
-
 <header>
-<h4>Buses from Kingston MakerLabs</h4>
+<h5>Buses from Ham Library</h5>
 </header>
 <?php
-if (isset($_POST["user_input"])){
-	$input=$_POST["user_input"];
-	$name = "Your stop";
-	$stopnumber = $input;
-	display ($name,$stopnumber);
-}
-
 $name = "Ashburnham Road to Richmond";
 $stopnumber = 51750;
 display ($name,$stopnumber);
@@ -46,15 +34,6 @@ display ($name,$stopnumber);
 $name = "Ashburnham Road to Kingston";
 $stopnumber = 56822;
 display ($name,$stopnumber);
-
-$name = "Mariner Gardens to Richmond";
-$stopnumber = 57780;
-display ($name,$stopnumber);
-
-$name = "Mariner Gardens to Kingston";
-$stopnumber = 57522;
-display ($name,$stopnumber);
-
 
 
 
@@ -65,13 +44,18 @@ function display ($head,$num)
    $info =  (json_decode($result,true));
    $line = 0;
    
-   echo("<section>
-	<h5>$head<h5>
-	<pre>");
+ 
    foreach ($info['arrivals'] as $bus ) {
   		++$line;
-  		printf("%-2d %-4s %-16s%2d min\n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
-   }
+  		printf("%-2d %-4s %-16s%2d min \n",$line,$bus['routeName'],$bus['destination'],$bus['estimatedWait']);
+                echo("<p></p>");
+                if ( $line == 2 ) {
+                   break;
+                  }
+//                else {
+//                 echo "/n";
+//                  }
+ }
    echo("</pre>
    	</section>");
 }

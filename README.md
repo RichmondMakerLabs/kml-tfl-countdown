@@ -1,3 +1,7 @@
+This project will work but the system we currently have live in our local library is one based in Javascript:
+https://gitlab.com/RichmondMakerLabs/JS-countdown
+
+
 KML-TFL-Countdown
 =================
 
